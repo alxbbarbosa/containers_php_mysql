@@ -1,0 +1,4 @@
+www/
+data/
+logs/
+.docker-compose.yml.swp
