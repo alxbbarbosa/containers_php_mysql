@@ -5,6 +5,12 @@ services:
     build:
       context: ./webserver/bin
     #image: 'php:7.3-apache'
+    deploy:
+      resources:
+        limits:
+          memory: 512M
+        reservations:
+          memory: 256M
     container_name: webserver_apache
     restart: always
     volumes:
